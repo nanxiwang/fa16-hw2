@@ -6,6 +6,10 @@ class Stringify
     @adjective = adjective
   end
 
-  def what_am_i
+  def what_am_i()
+  	if :name.blank? or :adjective.blank?
+  		return "You are nothing!"	
+  	end
+  	return "#{:name} is so #{:adjective}"
   end
 end

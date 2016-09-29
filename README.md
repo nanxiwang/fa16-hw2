@@ -1,4 +1,4 @@
-# Rails DeCal Fall 2016 Homework 2
+# Rails DeCal Fall 2016 Homework 2     
 
 ## Introduction
 Hey there! Welcome to homework 2 of the Rails DeCal. By this week, the course will have covered routes, simple ruby syntax, and basic CRUD statements.
@@ -88,7 +88,7 @@ Now we're going to look at more routing + creating classes!
 
 If you look at the Question 3 section on the home page, you'll see that we have another form! However, if you submit it you'll get an error message telling you that no route matches the request.
 
-Let's fix this bug.
+Let's fix this bug.   
 
 Step 1: `<%= form_tag age_path, method: :put do %>` tells Rails to create a `PUT` request to `/age` on form submission. Create an appropriate route in `routes.rb` to handle the form submission; direct it to the `person` method in `pages_controller.rb`, rather than the `age` method. This means that a GET request to `/age` will be handled by a different action than a PUT request to `/age`!
 
